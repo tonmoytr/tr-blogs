@@ -34,9 +34,7 @@ export default function Navbar() {
           <Link href="/blogs" className="text-gray-700 hover:text-black">
             Blogs
           </Link>
-          <Link href="/newblog" className="text-gray-700 hover:text-black">
-            Write Blog
-          </Link>
+          
           <Link
             href="/login"
             className="text-gray-100 font-bold hover:text-black"

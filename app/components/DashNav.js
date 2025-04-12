@@ -28,6 +28,9 @@ export default function DashNav() {
           <Link href="/" className="text-gray-700 hover:text-black">
             Home
           </Link>
+          <Link href="/newblogs" className="text-gray-700 hover:text-black">
+            Write Blog
+          </Link>
 
           <Link
             href="/login"
