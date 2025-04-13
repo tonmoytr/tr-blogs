@@ -17,8 +17,6 @@ export async function createBlog(formData) {
     return { message: "Please fill all inputs" };
   }
 
-  console.log(blogName);
-
   // await connectDatabase();
 
   const allBlogs = new newBlog({

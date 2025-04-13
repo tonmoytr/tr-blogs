@@ -16,15 +16,15 @@ export default function BlogPostForm() {
     if (newPost.status) {
       setLoading(false);
     }
-
-    console.log(newPost);
   };
 
   return (
     <div>
-        <div className="text-center">
-            <h1 className="text-5xl font-bold mt-8 text-teal-600">Write Your Blog</h1>
-        </div>
+      <div className="text-center">
+        <h1 className="text-5xl font-bold mt-8 text-teal-600">
+          Write Your Blog
+        </h1>
+      </div>
       <form onSubmit={formAction} className="max-w-xl mx-auto mt-10 space-y-4">
         <input
           type="text"

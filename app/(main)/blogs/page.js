@@ -4,7 +4,6 @@ import React from "react";
 
 export default async function page() {
   const allBlogs = await newBlog.find({}).lean();
-  console.log("all blogs", allBlogs);
   return (
     <div className="mt-20 max-w-7xl mx-auto grid grid-cols-3 gap-3">
       {allBlogs.map((blog) => (
@@ -15,7 +14,10 @@ export default async function page() {
           <p>Category: {blog.category}</p>
           <p className="text-gray-600">{blog.content}</p>
           <br />
-          <Link className="border p-3 rounded bg-gray-50" href={`/blogs/${blog._id}`}>
+          <Link
+            className="border p-3 rounded bg-gray-50"
+            href={`/blogs/${blog._id}`}
+          >
             View Details
           </Link>
         </div>

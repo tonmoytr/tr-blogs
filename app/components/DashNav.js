@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
-export default function Navbar() {
+export default function DashNav() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -28,13 +28,10 @@ export default function Navbar() {
           <Link href="/" className="text-gray-700 hover:text-black">
             Home
           </Link>
-          <Link href="/dashboard" className="text-gray-700 hover:text-black">
-            Dashboard
+          <Link href="/newblogs" className="text-gray-700 hover:text-black">
+            Write Blog
           </Link>
-          <Link href="/blogs" className="text-gray-700 hover:text-black">
-            Blogs
-          </Link>
-          
+
           <Link
             href="/login"
             className="text-gray-100 font-bold hover:text-black"
